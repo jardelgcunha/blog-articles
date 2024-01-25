@@ -22,22 +22,22 @@
 
 .imagens {
     position: relative;
-    height: 700px;
+    height: 406px;
 }
 
 .imagens > .minhaFoto {
     position: absolute;
     right: 0;
-    bottom: 2vw;
-    width: 16vw;
+    bottom: 0;
+    width: 18vw;
     border-radius: 50%;
 }
 
 .imagens > .circuloColorido {
     position: absolute;
     right: 7vw;
-    bottom: 4.2vw;
-    width: 18vw;
+    bottom: 2.2vw;
+    width: 25vw;
 }
 
 @media (max-width: 1100px) {
