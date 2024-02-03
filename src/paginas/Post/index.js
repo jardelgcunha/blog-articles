@@ -1,8 +1,9 @@
 import './Post.css';
-import { Route, Routes, useParams } from "react-router-dom"
+import styles from './Post.module.css';
+import { useParams } from 'react-router-dom';
 import posts from 'json/posts.json';
-import PostModelo from "componentes/PostModelo";
-import ReactMarkdown from "react-markdown";
+import PostModelo from 'componentes/PostModelo';
+import ReactMarkdown from 'react-markdown';
 import NaoEncontrada from 'paginas/NaoEncontrada';
 import PaginaPadrao from 'paginas/PaginaPadrao';
 import PostCard from 'componentes/PostCard';
@@ -23,10 +24,6 @@ export default function Post() {
         .sort((a, b) => b.id - a.id)
         .slice(0, 4);
 
-    console.log(postsRecomendados);
-
-    // console.log(post);
-
     return (
         <PaginaPadrao>
             <PostModelo
@@ -40,9 +37,9 @@ export default function Post() {
                 </div>
 
                 <div>
-                    <h2 className="tituloOutrosPosts">Outros posts que você pode gostar:</h2>
+                    <h2 className={styles.tituloOutrosPosts}>Outros posts que você pode gostar:</h2>
 
-                    <ul className="postsRecomendados">
+                    <ul className={styles.postsRecomendados}>
                         {postsRecomendados.map((post) => (
                             <li key={post.id}>
                                 <PostCard post={post} />

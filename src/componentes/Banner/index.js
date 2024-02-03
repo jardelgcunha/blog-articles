@@ -1,17 +1,17 @@
 import styles from './Banner.module.css';
-import circuloColorido from 'assets/circulo_colorido.png'
-import minhaFoto from 'assets/minha_foto.png'
+import circuloColorido from 'assets/circulo_colorido.png';
+import minhaFoto from 'assets/minha_foto.png';
 
 export default function Banner() {
     return (
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
-                <h1 className={styles.titulo}>
-                    Olá, Mundo!
-                </h1>
+                <h1 className={styles.titulo}>Olá, Mundo!</h1>
 
                 <p className={styles.paragrafo}>
-                    Boas vindas ao meu espaço pessoal! Eu sou Antônio Evaldo, instrutor de Front-end da Alura. Aqui compartilho vários conhecimentos, espero que aprenda algo novo :)
+                    Boas vindas ao meu espaço pessoal! Eu sou Antônio Evaldo,
+                    instrutor de Front-end da Alura. Aqui compartilho vários
+                    conhecimentos, espero que aprenda algo novo :)
                 </p>
             </div>
 
@@ -20,15 +20,15 @@ export default function Banner() {
                     className={styles.circuloColorido}
                     src={circuloColorido}
                     aria-hidden={true}
-                    alt='Circulo colorido de fundo a foto do Evaldo'
+                    alt="Circulo colorido de fundo a foto do Evaldo"
                 />
 
                 <img
                     className={styles.minhaFoto}
                     src={minhaFoto}
-                    alt='Foto Antônio Evaldo sorrindo'
+                    alt="Foto Antônio Evaldo sorrindo"
                 />
             </div>
         </div>
-    )
+    );
 }

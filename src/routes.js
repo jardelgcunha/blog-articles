@@ -1,12 +1,12 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Inicio from './paginas/Inicio'
-import SobreMim from './paginas/SobreMim'
-import Menu from "./componentes/Menu";
-import Rodape from "componentes/Rodape";
-import PaginaPadrao from "paginas/PaginaPadrao";
-import Post from "paginas/Post";
-import NaoEncontrada from "paginas/NaoEncontrada";
-import ScrollToTop from "componentes/ScrollToTop";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Inicio from './paginas/Inicio';
+import SobreMim from './paginas/SobreMim';
+import Menu from './componentes/Menu';
+import Rodape from 'componentes/Rodape';
+import PaginaPadrao from 'paginas/PaginaPadrao';
+import Post from 'paginas/Post';
+import NaoEncontrada from 'paginas/NaoEncontrada';
+import ScrollToTop from 'componentes/ScrollToTop';
 
 function AppRoutes() {
   return (
@@ -25,7 +25,8 @@ function AppRoutes() {
       </Routes>
 
       <Rodape />
-    </BrowserRouter>)
-};
+    </BrowserRouter>
+  );
+}
 
 export default AppRoutes;
